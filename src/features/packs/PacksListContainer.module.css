@@ -1,0 +1,21 @@
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+.packListHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tools {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: end;
+    margin-bottom: 24px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
