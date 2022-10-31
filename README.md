@@ -24,6 +24,7 @@
 :white_check_mark: Лоадинг  
 :white_check_mark: Загрузка аватарки  
 :white_check_mark: Редактирование профиля  
+:white_check_mark: Редактирование колод и карточек
 :white_check_mark: Модальные окна  
 :white_check_mark: Private route  
 :white_check_mark: Различные фильтрации, сохранение фильтров после перезагрузки  
