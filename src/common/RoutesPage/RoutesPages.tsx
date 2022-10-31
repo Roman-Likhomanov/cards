@@ -17,16 +17,15 @@ import {Learn} from "../../features/learn/Learn";
 import {PrivateRoute} from "./PrivateRoute";
 
 export const routes = [
-  {path: Path.LOGIN, component: <Login/>},
-  {path: Path.REGISTRATION, component: <Registration/>},
-  {path: Path.PROFILE, component: <Profile/>},
-  {path: Path.FORGOT_PASSWORD, component: <ForgotPassword/>},
-  {path: Path.NEW_PASSWORD, component: <NewPassword/>},
-  {path: Path.CHECK_EMAIL, component: <CheckEmail/>},
-  {path: Path.CARDS, component: <Cards/>},
-  {path: Path.PACKS, component: <Packs/>},
-  {path: Path.LEARN, component: <Learn/>},
-  {path: '*', component: <Error404/>},
+  {path: 'Login', component: <Login/>},
+  {path: 'Registration', component: <Registration/>},
+  {path: 'Profile', component: <Profile/>},
+  {path: 'Forgot password', component: <ForgotPassword/>},
+  {path: 'New password', component: <NewPassword/>},
+  {path: 'Check email', component: <CheckEmail/>},
+  {path: 'Cards', component: <Cards/>},
+  {path: 'Packs', component: <Packs/>},
+  {path: '404', component: <Error404/>},
 ]
 
 export const RoutesPage = () => {
@@ -45,17 +44,10 @@ export const RoutesPage = () => {
     <div>
       <ul className={style.nav}>
         {routes.map(({path}, index) => <li key={index}><NavLink to={path} children={path}
-                                                                className={style.link}></NavLink></li>)}
+                                                                className={ navData => navData.isActive ? style.active : style.link }></NavLink></li>)}
       </ul>
 
       <Routes>
-        {/*побаловаться и порадоваться ракете*/}
-        {/*<Route path={'/'} element={<Navigate to={'*'}/>}/>*/}
-        {/*<Route path={'/'} element={<Navigate to={Path.LOGIN}/>}/>*/}
-        {/*{routes.map(({path, component}) => (*/}
-        {/*    <Route key={path} path={path} element={component}/>*/}
-        {/*))}*/}
-
         <Route path={'*'} element={<Error404/>}/>
         <Route path={'/'} element={<Navigate to={Path.LOGIN}/>}/>
         <Route path={Path.LOGIN} element={<Login/>}/>

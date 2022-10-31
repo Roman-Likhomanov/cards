@@ -23,7 +23,8 @@ export const ForgotPassword = () => {
         initialValues: {
             email: '',
             message: `<div style="background-color: lime; padding: 15px">
-                        password recovery link: 
+                        password recovery link(для корректной работы скопируйте ссылку и вставьте в адресную строку 
+                        открытой страницы приложения): 
                        <a href='https://roman-likhomanov.github.io/cards/#/set-new-password/$token$'>
                         link</a>
                         </div>`

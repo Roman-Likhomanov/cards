@@ -20,3 +20,24 @@ li {
     list-style-type: none;
 }
 
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.link:hover {
+    background-color: #366EFF;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.active {
+    background-color: #366EFF;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 10px;
+    color: #FFFFFF;
+}
+

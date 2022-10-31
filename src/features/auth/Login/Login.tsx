@@ -65,6 +65,7 @@ export const Login = () => {
         <>
             {appStatus === 'loading' ? <Preloader/> :
                 <div className={styles.wrapper}>
+                    <p><b>Test account</b><br></br><b>email: </b>nya-admin@nya.nya<br></br><b>password: </b>1qazxcvBG</p>
                     <form className={styles.form} onSubmit={formik.handleSubmit}>
                         <h2 className={styles.title}>Sign in</h2>
                         <div className={styles.inputWrapper}>
