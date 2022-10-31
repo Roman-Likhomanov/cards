@@ -1,44 +1,32 @@
-# Learning Cards - an opensource educating project.
+## Приложение "Обучающие карточки"
 
-## Project description
+## Описание проекта
+Обучающие карточки - это небольшие карточки для заметок, используемые для тестирования и улучшения ваших технических знаний. Каждая карточка двусторонняя, с вопросом на одной стороне и ответом на другой.  
+Обычно есть несколько карточек, которые, как группа, представляют категорию информации, которую вы пытаетесь запомнить, выучить и освоить. Эта группа называется колодой, то есть в одну колоду может входить множество карточек.
 
-Learning cards are small note cards used for testing and improving your technical knowledge. Every card is two-sided, with the question on one side and the prompt or full answer on the other.
-This may include questions about :
-- Vanilla JS,
-- React,
-- Redux,
-- git,
-- computer science,
-  or about other demanded technologies.
+## Стэк
+:white_check_mark: React, Redux, TS  
+:white_check_mark: Functional components
+:white_check_mark: Hooks
+:white_check_mark: Routes
+:white_check_mark: Rest API
+:white_check_mark: Formik
+:white_check_mark: MUI
+:white_check_mark: Jest
 
-For example, one side of the card may say:
-**“What is React”**,
-and the other side:
-*“A JavaScript library for building user interfaces”*. Usually there are several flashcards that, as a group, represent a category of information you’re trying to remember, learn, and master.
+## Что сделано в приложении?
+:white_check_mark: Регистрация  
+:white_check_mark: Логинизация  
+:white_check_mark: Восстановление пароля  
+:white_check_mark: Валидация  
+:white_check_mark: Обработка ошибок
+:white_check_mark: Пагинация  
+:white_check_mark: Лоадинг  
+:white_check_mark: Загрузка аватарки  
+:white_check_mark: Редактирование профиля
+:white_check_mark: Модальные окна
+:white_check_mark: Private route
+:white_check_mark: Различные фильтрации, сохранение фильтров после перезагрузки
+:white_check_mark: Логика приложения: создание колод, карточек, обучение по карточкам, рейтинги обучения, взаимодействие с карточками других пользователей.
+https://roman-likhomanov.github.io/cards
 
-![app example](src/assets/img/app.jpg)
-
-## GitHub commits guideline
-
-**type**: description
-
-**feat** - implemented new functionality from the terms of reference (added zoom support, added a footer, added a product card).
-**fix** - bug fixing
-**style** - CSS and 
-**refactor** - code refactoring
-**test** - test added
-
-Commit examples:
-
-test: create unit test for profile reducer
-
-feat: add Header
-
-## Stack:
-- React
-- Typescript
-- redux
-- Formik
-- MUI
-- jest
-- IDE- WebStorm
